@@ -130,7 +130,7 @@ X': 在 Octave 中表示矩阵 X 的转置，即 $X^T$
 是否需要迭代运算	需要	不需要
 特征量大[^1] 时适用，$O\left(kn^2\right)$	不适用，$(X^TX)^{-1}$ 复杂度 $O\left( {{n}^{3}} \right)$
 适用范围[^2] 各类模型只适用线性模型，且矩阵需可逆
-[^1]: 一般来说，当 $n$ 超过 10000 时，对于正规方程而言，特征量较大。
+[^1]: 一般来说，当 $n$​ 超过 10000 时，对于正规方程而言，特征量较大。
 [^2]: 梯度下降算法的普适性好，而对于特定的线性回归模型，正规方程是很好的替代品。
 
 正规方程法的推导过程： $$ \begin{aligned} J\left( \theta \right)& =\frac{1}{2m}\sum\limits_{i=1}^{m}{{{\left( {h_{\theta}}\left( {x^{(i)}} \right)-{y^{(i)}} \right)}^{2}}}\\ & =\frac{1}{2m}||X\theta-y||^2 \\ & =\frac{1}{2m}(X\theta-y)^T(X\theta-y) \hspace{15cm} \end{aligned} $$
